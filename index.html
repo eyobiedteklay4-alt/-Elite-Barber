@@ -174,12 +174,13 @@ border-radius:8px;
     margin-bottom: 30px;
 }
 
-
 .contact{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:40px;
+    display:grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap:40px;
+    align-items:start;
 }
+
 
 iframe{
 width:100%;
@@ -209,7 +210,7 @@ text-decoration:none;
 input,textarea{
 width:100%;
 padding:12px;
-margin:10px 0;
+margin: 10px;
 border:none;
 border-radius:5px;
 }
@@ -221,6 +222,24 @@ border:none;
 cursor:pointer;
 font-weight:bold;
 }
+
+
+.Maps{
+    width:100%;
+    height:500px;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+iframe{
+    width:100%;
+    height:500px;
+    border:none;
+    border-radius:10px;
+}
+
+
+
 
 /* MOBIEL RESPONSIVE */
 
@@ -469,8 +488,6 @@ h2{
 <p>"Kom hier al jaren. Altijd tevreden!"</p>
 <b>Kevin</b>
 </div>
-
-
 </section>
 
 <section id="contact">
@@ -478,15 +495,14 @@ h2{
 <h2>Contact</h2>
 
 <div class="contact">
-<div>
 
+<div class="contact-info">
 <h3>📍 Adres</h3>
 <p>Barberstraat 15<br>2000 Antwerpen</p>
 
 <br>
 
 <h3>📞 Telefoon</h3>
-
 <p>
 <a href="tel:+32123456789" style="color:gold;">
 +32 12 34 56 789
@@ -496,7 +512,6 @@ h2{
 <br>
 
 <h3>🕒 Openingsuren</h3>
-
 <p>Maandag - Vrijdag: 09:00 - 19:00</p>
 <p>Zaterdag: 09:00 - 18:00</p>
 <p>Zondag: Gesloten</p>
@@ -509,16 +524,18 @@ h2{
 <a href="#" style="color:gold;">Instagram</a><br>
 <a href="#" style="color:gold;">Facebook</a>
 </p>
-<br>
+
+</div>
 
 
-<div>
+<div class="Maps">
 
 <iframe
 src="https://www.google.com/maps?q=Brussels&output=embed">
 </iframe>
 
 </div>
+
 
 </div>
 
